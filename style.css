@@ -1,0 +1,356 @@
+@charset "UTF-8";
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	font-size: 14px;
+	line-height: 1.6;
+	color: #222222;
+	background-color:#fff;
+  font-family: "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+  }
+
+  h1 {
+  font-family: Forum;
+  font-size: 48px;
+  font-style: normal;
+  font-variant: normal;
+  letter-spacing: 0.2em;
+  }
+
+  h2 {
+  font-family: Forum;
+  font-size: 36px;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 26.4px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  margin-bottom: 20px;
+  }
+
+  h3 {
+    font-family: Forum,"ヒラギノ明朝 Pro", "Hiragino Mincho Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 15.4px;
+    letter-spacing: 0.2em;
+    color: #ddbaa8;
+    text-align: center;
+    }
+
+    a {
+      font-family: Forum;
+      }
+
+
+#SPA-treatment, #concept, #staff, #blog, #location {
+	padding: 40px 0 56px 0;
+}
+
+ul,li {
+  list-style: none;
+}
+
+/* ================================================ */
+/*button*/
+/* ================================================ */
+.button-small {
+  display: block;
+  width: 146px;
+  height: 34px;
+  background-color: #222222;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  line-height: 30px;
+  text-align: center;
+	margin-top: 10px;
+}
+
+/* ================================================ */
+/*header*/
+/* ================================================ */
+#header {
+  background-color: #FFFFFF;
+  max-width: 1400px;
+  height: 70px;
+  top: 0;
+  z-index: 1;
+}
+
+.header-inner {
+  padding-left: 60px;
+  padding-right: 60px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-menu {
+  font-family: futura;
+  letter-spacing: 0.2em;
+	display: flex;
+	justify-content: space-between;
+}
+
+#header li{
+	margin-right: 20px;
+}
+
+#header h2 {
+	margin-right: 60px;
+  margin-bottom: 0;
+}
+
+/* ================================================ */
+/*main visual*/
+/* ================================================ */
+
+/*main-imageに背景画像を設置し、divに高さを512px設置する。背景画像のサイズをcoverに設定*/
+
+#main-image {
+	position: relative;
+	padding: 10px 90px 24px 90px;
+	text-align: center;
+}
+
+/* ================================================ */
+/*Spa Treatment*/
+/* ================================================ */
+
+
+#SPA-treatment{
+	background-color: #ffffff;
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#SPA-treatment img {
+  height: 260px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#SPA-treatment h3 {
+  margin-top: 20px;
+}
+
+#SPA-treatment p {
+  font-size: 14px;
+  line-height: 27px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+/* メニュー表はあとで設定する */
+.menu-contents {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.treatment-menu .item {
+  display: flex;
+  flex-wrap: nowrap;
+  text-decoration: none;
+  border-bottom: 1px solid #CCC;
+  padding-left: 30px;
+  padding-bottom: 0px;
+  padding-top: 5px;
+}
+
+.treatment-menu .item:first-child {
+  padding-top: 30px;
+}
+
+.treatment-menu .item .menu-name {
+  margin: 0;
+  width: 100%;
+  font-size: 16px;
+  padding: 0 20px 0 0;
+}
+
+.treatment-menu .item .price {
+  margin: 0;
+  width: 100%;
+  text-align: right;
+}
+
+#intro{
+	background-color: #5e756e;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+#intro p {
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#intro a.button-small {
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+/* 中のオブジェクトだけセンターにしたかった */
+#concept{
+	background-color: #fff;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+#concept h2 {
+  color: #eac2ad;
+}
+
+#concept p {
+  font-size: 14px;
+  line-height: 27px;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+#concept p.concept-copy {
+  font-size: 36px;
+  line-height: 73px;
+  letter-spacing: 0.1em;
+}
+
+/* ここからSTAFF */
+#staff{
+	background-color: #fff;
+  max-width: 80%;
+  margin: 0 auto
+}
+
+.staff-intro {
+  text-align:center;
+}
+
+.staff-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+}
+
+.staff-list li {
+  width: 30%;
+}
+
+/* ここからblog */
+#blog {
+  background-color: #fff;
+}
+
+.contents {
+  background-color: #eac2ad;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.blog-list .item a{
+  display: flex;
+  flex-wrap: nowrap;
+  text-decoration: none;
+  padding-left: 30px;
+  padding-bottom: 5px;
+}
+
+.blog-list .item:first-child a{
+  padding-top: 20px;
+}
+
+.blog-list .item .date{
+  margin: 0;
+  min-width: 120px;
+  font-size: 16px;
+  padding: 0 20px 0 0;
+}
+
+.blog-list .item .title{
+  margin: 0;
+  width: 100%;
+}
+
+.contents a:hover {
+  color: #FFFFFF;
+}
+
+#blog .blog-list p {
+  font-family: source-han-sans-japanese, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+p.page {
+  font-family: "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+  text-align: center;
+  padding: 15px;
+}
+
+#location{
+	background-color: #FFFFFF;
+}
+
+.content-wrapper {
+  background-color: #c98c77;
+}
+
+.location-inner {
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.info {
+  margin-right: 20px;
+}
+
+p.location-name {
+  color: #edcab8;
+  font-size: 16px;
+  font-family: source-han-sans-japanese, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+#location p {
+  font-family: source-han-sans-japanese, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+#location .info .button-small {
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.map iframe {
+  display: block;
+  width: 300px;
+  height: 300px;
+}
+
+#footer{
+	background-color: #c98c77;
+}
+
+#footer p {
+  text-align: center;
+}
