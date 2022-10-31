@@ -108,21 +108,12 @@ ul,li {
   margin-bottom: 0;
 }
 
-/* ================================================ */
-/*main visual*/
-/* ================================================ */
-
-/*main-imageに背景画像を設置し、divに高さを512px設置する。背景画像のサイズをcoverに設定*/
 
 #main-image {
 	position: relative;
 	padding: 10px 90px 24px 90px;
 	text-align: center;
 }
-
-/* ================================================ */
-/*Spa Treatment*/
-/* ================================================ */
 
 
 #SPA-treatment{
@@ -150,7 +141,6 @@ ul,li {
   padding-bottom: 10px;
 }
 
-/* メニュー表はあとで設定する */
 .menu-contents {
   max-width: 80%;
   margin: 0 auto;
@@ -203,7 +193,6 @@ ul,li {
   padding-bottom: 20px;
 }
 
-/* 中のオブジェクトだけセンターにしたかった */
 #concept{
 	background-color: #fff;
   max-width: 80%;
