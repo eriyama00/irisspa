@@ -15,32 +15,32 @@ body {
 
   h1 {
   font-family: Forum;
-  font-size: 48px;
+  font-size: 46px;
   font-style: normal;
   font-variant: normal;
   letter-spacing: 0.2em;
   }
 
   h2 {
-  font-family: Forum;
-  font-size: 36px;
-  font-style: normal;
-  font-variant: normal;
-  line-height: 26.4px;
-  text-align: center;
-  letter-spacing: 0.2em;
-  margin-bottom: 20px;
+    color: #ddbaa8;
+    font-family: Forum;
+    font-size: 36px;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 26.4px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    margin-bottom: 20px;
   }
 
   h3 {
     font-family: Forum,"ヒラギノ明朝 Pro", "Hiragino Mincho Pro";
-    font-size: 24px;
+    font-size: 18px;
     font-style: normal;
     font-variant: normal;
     font-weight: 700;
     line-height: 15.4px;
     letter-spacing: 0.2em;
-    color: #ddbaa8;
     text-align: center;
     }
 
@@ -48,9 +48,12 @@ body {
       font-family: Forum;
       }
 
+a:hover {
+  opacity: 80%;
+}
 
-#SPA-treatment, #concept, #staff, #blog, #location {
-	padding: 40px 0 56px 0;
+#SPA-treatment, #menu, #concept, #staff, #blog, #location {
+	padding-top: 120px;
 }
 
 ul,li {
@@ -73,12 +76,33 @@ ul,li {
 	margin-top: 10px;
 }
 
+.button-small:hover {
+  opacity: 80%;
+}
+
+.button {
+  display: block;
+  width: 261px;
+  height: 65px;
+  background-color: #fff;
+  color: #222222;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  line-height: 3;
+  text-align: center;
+}
+
+.button:hover {
+  opacity: 80%;
+}
+
 /* ================================================ */
 /*header*/
 /* ================================================ */
 #header {
   background-color: #FFFFFF;
-  max-width: 1400px;
+  max-width: 1200px;
+  margin: 0 auto;
   height: 70px;
   top: 0;
   z-index: 1;
@@ -93,14 +117,24 @@ ul,li {
 }
 
 .header-menu {
-  font-family: futura;
-  letter-spacing: 0.2em;
 	display: flex;
 	justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 33px 33px;
 }
 
-#header li{
+.header-menu a {
+  font-family: "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+  font-size: 18px;
+  letter-spacing: 0.2em;
+}
+
+.header-list li {
 	margin-right: 20px;
+}
+
+#header h1 {
+  margin-right: 100px;
 }
 
 #header h2 {
@@ -108,37 +142,57 @@ ul,li {
   margin-bottom: 0;
 }
 
-
-#main-image {
-	position: relative;
-	padding: 10px 90px 24px 90px;
-	text-align: center;
+.toggle-menu-button {
+  display: none;
 }
 
+/* ================================================ */
+/*main visual*/
+/* ================================================ */
 
-#SPA-treatment{
-	background-color: #ffffff;
-  max-width: 80%;
-  margin: 0 auto;
+
+#main-image {
   text-align: center;
 }
 
-#SPA-treatment img {
-  height: 260px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+
+/* ================================================ */
+/*Spa Treatment*/
+/* ================================================ */
+
+
+#SPA-treatment {
+	background-color: #ffffff;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 180px;
 }
 
-#SPA-treatment h3 {
-  margin-top: 20px;
+
+#SPA-treatment img {
+  height: 400px;
+  margin-right: 20px;
+}
+
+.SPA-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 #SPA-treatment p {
   font-size: 14px;
-  line-height: 27px;
-  letter-spacing: 0.04em;
+  line-height: 30px;
+  letter-spacing: 0.06em;
   text-align: center;
-  padding-bottom: 10px;
+  margin-top: 25px;
+}
+
+#SPA-treatment span {
+  display: block;
 }
 
 .menu-contents {
@@ -153,7 +207,7 @@ ul,li {
   border-bottom: 1px solid #CCC;
   padding-left: 30px;
   padding-bottom: 0px;
-  padding-top: 5px;
+  padding-top: 12px;
 }
 
 .treatment-menu .item:first-child {
@@ -173,21 +227,32 @@ ul,li {
   text-align: right;
 }
 
-#intro{
+.treatment-menu .menu-name span {
+  display: inline-block;
+}
+
+.treatment-menu .price span {
+  font-size: 12px;
+}
+
+
+
+#intro {
 	background-color: #5e756e;
-  margin: 0 auto;
+  margin-top: 100px;
   padding-bottom: 40px;
+  padding-top: 40px;
 }
 
 #intro p {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 26px;
   text-align: center;
-  padding-top: 20px;
+  margin-top: 20px;
   padding-bottom: 20px;
 }
 
-#intro a.button-small {
+#intro .button {
   align-items: center;
   margin: 0 auto;
   padding-bottom: 20px;
@@ -205,12 +270,13 @@ ul,li {
 
 #concept p {
   font-size: 14px;
-  line-height: 27px;
-  letter-spacing: 0.04em;
+  line-height: 30px;
+  letter-spacing: 0.06em;
   text-align: center;
+  margin-top: 25px;
 }
 
-#concept p.concept-copy {
+#concept .concept-copy {
   font-size: 36px;
   line-height: 73px;
   letter-spacing: 0.1em;
@@ -237,23 +303,36 @@ ul,li {
   width: 30%;
 }
 
+.staff-list p {
+  padding-top: 20px;
+}
+
 /* ここからblog */
 #blog {
   background-color: #fff;
 }
 
 .contents {
-  background-color: #eac2ad;
+  background-color: #f6f0ed;
   max-width: 80%;
   margin: 0 auto;
 }
 
-.blog-list .item a{
+.blog-list {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.blog-list .item a {
   display: flex;
   flex-wrap: nowrap;
   text-decoration: none;
-  padding-left: 30px;
-  padding-bottom: 5px;
+  border-bottom: 1px solid #CCC;
+  line-height: 3em;
+}
+
+.contents a:hover {
+  color: #FFFFFF;
 }
 
 .blog-list .item:first-child a{
@@ -272,16 +351,6 @@ ul,li {
   width: 100%;
 }
 
-.contents a:hover {
-  color: #FFFFFF;
-}
-
-#blog .blog-list p {
-  font-family: source-han-sans-japanese, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-}
 
 p.page {
   font-family: "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
@@ -289,12 +358,14 @@ p.page {
   padding: 15px;
 }
 
-#location{
-	background-color: #FFFFFF;
+#blog a {
+  font-family: "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
 }
 
-.content-wrapper {
-  background-color: #c98c77;
+#location{
+	background-color: #94786e;
+  padding-top: 52px;
+  margin-top: 120px;
 }
 
 .location-inner {
@@ -303,26 +374,21 @@ p.page {
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  color: #fff;
 }
+
 .info {
   margin-right: 20px;
 }
 
 p.location-name {
-  color: #edcab8;
-  font-size: 16px;
-  font-family: source-han-sans-japanese, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
+  color: #f0d8cc;
+  font-size: 18px;
+  line-height: 0.03em;
 }
 
 #location p {
-  font-family: source-han-sans-japanese, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 #location .info .button-small {
@@ -332,14 +398,12 @@ p.location-name {
 
 .map iframe {
   display: block;
-  width: 300px;
+  width: 500px;
   height: 300px;
-}
-
-#footer{
-	background-color: #c98c77;
 }
 
 #footer p {
   text-align: center;
+  padding-bottom: 28px;
+  color: #f0d8cc;
 }
