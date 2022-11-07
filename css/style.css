@@ -15,7 +15,7 @@ body {
 
   h1 {
   font-family: Forum;
-  font-size: 46px;
+  font-size: 42px;
   font-style: normal;
   font-variant: normal;
   letter-spacing: 0.2em;
@@ -65,15 +65,14 @@ ul,li {
 /* ================================================ */
 .button-small {
   display: block;
-  width: 146px;
-  height: 34px;
+  width: 200px;
+  height: 50px;
   background-color: #222222;
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0.1em;
-  line-height: 30px;
+  line-height: 50px;
   text-align: center;
-	margin-top: 10px;
 }
 
 .button-small:hover {
@@ -82,13 +81,13 @@ ul,li {
 
 .button {
   display: block;
-  width: 261px;
+  width: 260px;
   height: 65px;
   background-color: #fff;
   color: #222222;
-  font-size: 24px;
+  font-size: 18px;
   letter-spacing: 0.1em;
-  line-height: 3;
+  line-height: 70px;
   text-align: center;
 }
 
@@ -103,7 +102,7 @@ ul,li {
   background-color: #FFFFFF;
   max-width: 1200px;
   margin: 0 auto;
-  height: 70px;
+  height: 80px;
   top: 0;
   z-index: 1;
 }
@@ -111,6 +110,7 @@ ul,li {
 .header-inner {
   padding-left: 60px;
   padding-right: 60px;
+  padding-top: 10px;
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -153,6 +153,10 @@ ul,li {
 
 #main-image {
   text-align: center;
+}
+
+#main-image img {
+  height: 64vh;
 }
 
 
@@ -236,7 +240,6 @@ ul,li {
 }
 
 
-
 #intro {
 	background-color: #5e756e;
   margin-top: 100px;
@@ -248,7 +251,6 @@ ul,li {
   color: #ffffff;
   font-size: 26px;
   text-align: center;
-  margin-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -392,6 +394,8 @@ p.location-name {
 }
 
 #location .info .button-small {
+  color: #222222;
+  background-color: #fff;
   margin: 0 auto;
   margin-top: 10px;
 }
@@ -406,4 +410,6 @@ p.location-name {
   text-align: center;
   padding-bottom: 28px;
   color: #f0d8cc;
+}
+
 }
