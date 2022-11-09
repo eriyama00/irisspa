@@ -152,6 +152,7 @@ ul,li {
 
 #main-image img {
   height: calc(100vh - 300px);
+  max-width: 100%;
 }
 
 
@@ -172,8 +173,9 @@ ul,li {
 
 
 #SPA-treatment img {
+  max-width: 100%;
   height: 400px;
-  margin-right: 20px;
+  padding-right: 20px;
 }
 
 .SPA-text {
@@ -305,7 +307,7 @@ ul,li {
 }
 
 .staff img {
-  max-width: auto;
+  max-width: 100%;
 }
 
 /* ここからblog */
@@ -353,18 +355,18 @@ ul,li {
   width: 100%;
 }
 
-
-p.page {
-  font-family: "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+#blog .page {
   text-align: center;
   padding: 15px;
+  display: block;
+  font-size: 18px;
 }
 
-#blog a {
+#blog .blog-list a {
   font-family: "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
 }
 
-#location{
+#location {
 	background-color: #94786e;
   padding-top: 52px;
   margin-top: 120px;
@@ -407,12 +409,13 @@ p.location-name {
 .map iframe {
   display: block;
   width: 500px;
-  max-width: auto;
-  height: 300px;
+  max-width: 100%;
+  height: 400px;
 }
 
 #footer p {
   text-align: center;
+  padding-top: 30px;
   padding-bottom: 28px;
   color: #f0d8cc;
 }
@@ -424,6 +427,10 @@ p.location-name {
 @media (max-width: 960px) {
   .br-sp {
     display: block;
+  }
+
+  h2 {
+    margin-bottom: 40px;
   }
 
   #header {
@@ -522,14 +529,23 @@ p.location-name {
     display: block;
     text-align: center;
     position: absolute;
-    top: 47%;
+    top: 55%;
     left: 0;
     right: 0;
     margin: 0 auto;
+    width: 220px;
+    height: 55px;
+    line-height: 55px;
+  }
+
+  #main-image img {
+    object-fit: cover;
+    height: calc(100vh - 200px);
   }
 
   #SPA-treatment {
     flex-direction: column;
+    padding-top: 40px;
   }
 
   .order1 {
@@ -552,6 +568,25 @@ p.location-name {
     padding-top: 40px;
   }
 
+  #SPA-treatment img {
+    height: auto;
+    margin-top: 40px;
+  }
+
+  .menu-contents {
+    max-width: 100%;
+  }
+
+  #intro p {
+    font-size: 20px;
+  }
+
+  #intro .button {
+    width: 220px;
+    height: 55px;
+    font-size: 14px;
+    line-height: 55px;
+  }
 
   #concept p {
     line-height: 2em;
@@ -559,7 +594,7 @@ p.location-name {
 
   #concept .concept-copy {
     font-size: 24px;
-    line-height: 0.1em;
+    line-height: 35px;
   }
 
   .staff-list {
@@ -569,11 +604,6 @@ p.location-name {
 
   .staff-list li {
     width: 100%;
-  }
-
-  .staff-list img {
-    width: 400px;
-    padding-top: 20px;
   }
 
   .staff-list p {
@@ -593,12 +623,17 @@ p.location-name {
   }
 
   #blog .page {
+    display: block;
     font-size: 18px;
-    padding: 20px;
   }
 
   .location-inner {
     display: block;
+    padding: 20px 0;
+  }
+
+  .map iframe {
+    height: 300px;
   }
 
   .wrapper1 {
@@ -617,5 +652,8 @@ p.location-name {
   #location .button-small {
     order: 4;
     width: 100%;
+    height: 55px;
+    line-height: 55px;
   }
+
 }
