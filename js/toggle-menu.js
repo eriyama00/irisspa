@@ -10,3 +10,9 @@ window.addEventListener('load', function () {
       }
   });
 });
+
+window.addEventListener('DOMContentLoaded', function(){
+    $('.toggle-menu-button').on('click', function () {
+        $('.toggle-menu-button').toggleClass('isClosed');
+    });
+});
