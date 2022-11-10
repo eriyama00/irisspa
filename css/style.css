@@ -516,11 +516,11 @@ p.location-name {
   }
 
   .toggle-menu-button.isClosed .bar_mid {
-    transform: translateY(0) rotate(45deg);
+    transform: translateY(0) rotate(15deg);
   }
 
   .toggle-menu-button.isClosed .bar_bottom {
-    transform: translateY(0) rotate(-45deg);
+    transform: translateY(0) rotate(-15deg);
   }
 
   #header .button-small {
