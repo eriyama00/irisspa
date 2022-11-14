@@ -59,6 +59,7 @@ ul,li {
   list-style: none;
 }
 
+
 /* ================================================ */
 /*button*/
 /* ================================================ */
@@ -161,7 +162,7 @@ ul,li {
 
 
 #SPA-treatment {
-  background-color: #ffffff;
+	background-color: #ffffff;
   width: 80%;
   max-width: 1200px;
   margin: 0 auto;
@@ -189,6 +190,7 @@ ul,li {
   letter-spacing: 0.06em;
   text-align: center;
   margin-top: 25px;
+  white-space: nowrap;
 }
 
 #SPA-treatment span {
@@ -218,7 +220,7 @@ ul,li {
   margin: 0;
   width: 100%;
   font-size: 16px;
-  padding: 0 20px 0 0;
+  padding: 0 10px 0 0;
 }
 
 .treatment-menu .item .price {
@@ -232,7 +234,7 @@ ul,li {
 }
 
 .treatment-menu .price span {
-  font-size: 12px;
+  font-size: 10px;
 }
 
 
@@ -245,7 +247,7 @@ ul,li {
 
 #intro p {
   color: #ffffff;
-  font-size: 26px;
+  font-size: 20px;
   text-align: center;
   padding-bottom: 20px;
 }
@@ -402,7 +404,7 @@ p.location-name {
   color: #222222;
   background-color: #fff;
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .map iframe {
@@ -430,6 +432,7 @@ p.location-name {
 
   h2 {
     margin-bottom: 40px;
+    font-size: 32px;
   }
 
   #header {
@@ -558,6 +561,10 @@ p.location-name {
     order: 3;
   }
 
+  #SPA-treatment h2 {
+    margin-bottom: 20px;
+  }
+
   #SPA-treatment p {
     line-height: 2em;
   }
@@ -572,11 +579,21 @@ p.location-name {
   }
 
   .menu-contents {
-    max-width: 100%;
+    max-width: 90%;
+  }
+
+  .treatment-menu .item {
+    padding-left: 0;
+    white-space: pre;
+  }
+
+  .treatment-menu .item .menu-name {
+    font-size: 14px;
+    display: block;
   }
 
   #intro p {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   #intro .button {
@@ -591,7 +608,7 @@ p.location-name {
   }
 
   #concept .concept-copy {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 35px;
   }
 
@@ -630,17 +647,22 @@ p.location-name {
     padding: 20px 0;
   }
 
-  .map iframe {
-    height: 300px;
-  }
-
-  .wrapper1 {
-    order: 1;
+  #location .info {
+    margin-right: 0;
   }
 
   .map {
     order: 2;
-    padding-top: 20px;
+    padding-top: 50px;
+  }
+
+  .map iframe {
+    height: 300px;
+    width: 100vw;
+  }
+
+  .wrapper1 {
+    order: 1;
   }
 
   .wrapper2 {
